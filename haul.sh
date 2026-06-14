@@ -136,7 +136,8 @@ _clear_progress() {
 _copy_one() {
     local idx=$1 rel=$2
     local s="$SRC/$rel" d="$DEST/$rel"
-    local out="$_WORK_DIR/$(printf '%09d' "$idx")"
+    local out
+    out="$_WORK_DIR/$(printf '%09d' "$idx")"
     local ts
     ts=$(date '+%Y-%m-%d %H:%M:%S')
 
