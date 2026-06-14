@@ -1,0 +1,13 @@
+# Force LF line endings for shell scripts regardless of OS
+*.sh        text eol=lf
+*.bats      text eol=lf
+
+# Standard text files — let Git normalize
+*.md        text
+*.yml       text
+*.txt       text
+
+# Binary files — no line-ending conversion
+*.zip       binary
+*.sas7bdat  binary
+*.xpt       binary
